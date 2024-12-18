@@ -13,7 +13,7 @@ rep : code
  - sous-rep : preprocessing
  - sous-rep : annotation tool
  - RE baseline : lancement des codes des baseline, résultats obtenus
-
+Dublin-Core
 ## citation
 EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. Nihed Bendahman, Karen Pinel-Sauvagnat, Gilles Hubert and Mokhtar Boumedyen Billami. Paper submitted to ESWC 2025.
 ## Licence
