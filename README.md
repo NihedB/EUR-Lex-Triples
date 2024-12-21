@@ -1,5 +1,5 @@
 # EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation
-EUR-Lex-Sum dataset annotated with triples
+EUR-Lex-Sum dataset [Aumiller, 2022](https://aclanthology.org/2022.emnlp-main.519.pdf) annotated with triples
 
 ![Here is an example of EUR-Lex-Triples](EUR-Lex-Triples-Examples.jpg)
 
