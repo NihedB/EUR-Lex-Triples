@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../script.js"></script>
+<title>Entity Highlighter</title>
+<link href="../styles.css" rel="stylesheet"/>
+<!-- Include a font icon library (e.g., FontAwesome) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<input id="documentId" type="hidden" value="sum_32014L0059"/>
+<input id="nextDocumentUrl" type="hidden" value="sum_32014O0060.html"/>
+<input id="verbList" type="hidden" value="amending,supplementing,repealing,implementing,amended"/>
+<input id="entitiesList" type="hidden" value="directive 82/891/eec,regulation 2016/778,directive 2005/56/ec,regulation 2016/1401,regulation 2016/1075,regulation 2017/867,regulation 2018/345,directive 2014/59/eu,directive 2002/47/ec,regulation 648/2012,regulation 2016/1400,regulation 2019/348,directive 2013/36/eu,directive 2004/25/ec,regulation 2016/911,regulation 2015/63,regulation 2016/1450,regulation 1093/2010,directive 2011/35/eu,directive 2007/36/ec,regulation 2016/1066,regulation 2016/860,directive 2017/2399,directive 2019/879,directive 2001/24/ec,regulation 2018/344,regulation 2016/1712,regulation 2021/622,regulation 2021/1340,regulation 2018/1624,directive 2012/30/eu,regulation 2016/962,directive 2019/2162"/>
+<div id="triplet">
+<h2>
+        🔺 Annotate triplets ! But what is a triplet ?
+    </h2>
+<ul>
+<li>
+        A triplet is composed of 3 elements: <span style=" background-color: yellow">Entity 1</span>, <span style=" color: blue">Action</span>, <span style=" background-color: yellow">Entity 2</span>.
+        </li>
+<li>
+        The entities are legal references to laws, represented in the form of a <span style=" background-color: yellow">court decision</span>, a <span style=" background-color: yellow">directive</span>, a <span style=" background-color: yellow">regulation</span>, etc.
+        </li>
+<li>
+        Actions are represented as verbs: To <span style=" color: blue">ammend</span>, to <span style=" color: blue">repeal </span>, to <span style=" color: blue">implement</span>, etc.
+        </li>
+<li>
+            ❌ Please read the text carefully, our goal here is to form relational triplet. Sometimes there are all the elements of a triplet, but they do not form a relational triplet.
+        </li>
+<li>
+            📚 you can find some directives and examples in <a href="../examples.pdf" target="_blank">examples.pdf</a>. Also, if you encounter an unclear example, don't hesitate to use the “Go to the document translation” button to view the document's translation. if it's a summary, click on "Synthèse d'information" in the menu on the left of the translation page.
+        </li>
+</ul>
+</div>
+<div id="triplet">
+<h2>
+    🖍 Annotation Process    
+</h2>
+<ul>
+<li> 🖱 Click the Add button to start the annotation process.</li>
+<li> 🖱 Double-click or highlight the part of the text corresponding to an entity or an action. 
+Please select the 3 elements of the triplet in the following order: Entity 1 ➡ Action ➡ Entity 2.
+</li>
+<li> You can see the current selection items and cancel it at anytime. </li>
+<li> Once the 3 element of a selection are made, it will automatically be added to the Selected Triplets section. If a triplet needs to be removed it can be done there too. </li>
+<li> Once the annotation is finished, please click on the "Download" button to download the annotations or the "Next Document" button to download the annotations and move to next document.</li>
+</ul>
+</div>
+<div class="home-button-container">
+<a class="home-button" href="../annotation.html">
+<i class="fas fa-home"></i> Home
+    </a>
+<a class="href" href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32014L0059&amp;qid=1726477566260" id="doc_traduction"> 📖 Go to the document translation</a>
+</div>
+<h1>Entity Highlighter</h1>
+<div class="carousel" id="carousel">
+<button id="prevBtn" onclick="prevParagraph()">Previous</button>
+<div class="carousel-content" id="carouselContent"><p>In 2017, directive 2014/59/eu was amended by directive 2017/2399. This harmonised the rules on bank creditors’ hierarchy through the creation of a new class of senior non-preferred debt that ranks in insolvency above own-funds instruments and subordinated liabilities, but below other senior liabilities. This new statutory insolvency ranking for senior non-preferred debt will improve the application of the bail-in tool with respect to debt instruments eligible for the minimum requirement for own funds and eligible liabilities and will help with the implementation in the EU of the G20 Total Loss-Absorbing Capacity (TLAC) standard for global systemically important financial institutions.</p><p>directive 2014/59/eu of the European Parliament and of the Council of 15 May 2014 establishing a framework for the recovery and resolution of credit institutions and investment firms and amending Council directive 82/891/eec, and directive 2001/24/ec directive 2002/47/ec directive 2004/25/ec directive 2005/56/ec directive 2007/36/ec directive 2011/35/eu directive 2012/30/eu directive 2013/36/eu, and regulation 1093/2010 regulation 648/2012, of the European Parliament and of the Council (OJ L 173, 12.6.2014, pp. 190-348)</p><p>Commission Implementing regulation 2021/622 of 15 April 2021 laying down implementing technical standards for the application of directive 2014/59/eu of the European Parliament and of the Council with regard to uniform reporting templates, instructions and methodology for reporting on the minimum requirement for own funds and eligible liabilities (OJ L 131, 16.4.2021, pp. 123-136)</p><p>Commission Delegated regulation 2019/348 of 25 October 2018 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to regulatory technical standards specifying the criteria for assessing the impact of an institution’s failure on financial markets, on other institutions and on funding conditions (OJ L 63, 4.3.2019, pp. 1-11)</p><p>Commission Implementing regulation 2018/1624 of 23 October 2018 laying down implementing technical standards with regard to procedures and standard forms and templates for the provision of information for the purposes of resolution plans for credit institutions and investment firms pursuant to directive 2014/59/eu of the European Parliament and of the Council, and repealing Commission Implementing regulation 2016/1066 (OJ L 277, 7.11.2018, pp. 1-65)</p><p>Commission Delegated regulation 2018/344 of 14 November 2017 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to regulatory technical standards specifying the criteria relating to the methodologies for valuation of difference in treatment in resolution (OJ L 67, 9.3.2018, pp. 3-7)</p><p>Commission Delegated regulation 2018/345 of 14 November 2017 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to regulatory technical standards specifying the criteria relating to the methodology for assessing the value of assets and liabilities of institutions or entities (OJ L 67, 9.3.2018, pp. 8-17)</p><p>Commission Delegated regulation 2016/1712 of 7 June 2016 supplementing directive 2014/59/eu of the European Parliament and of the Council establishing a framework for the recovery and resolution of credit institutions and investment firms with regard to regulatory technical standards specifying a minimum set of the information on financial contracts that should be contained in the detailed records and the circumstances in which the requirement should be imposed (OJ L 258, 24.9.2016, pp. 1-7)</p><p>Commission Delegated regulation 2016/1450 of 23 May 2016 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to regulatory technical standards specifying the criteria relating to the methodology for setting the minimum requirement for own funds and eligible liabilities (OJ L 237, 3.9.2016, pp. 1-9)</p><p>Commission Delegated regulation 2016/1401 of 23 May 2016 supplementing directive 2014/59/eu of the European Parliament and of the Council establishing a framework for the recovery and resolution of credit institutions and investment firms with regard to regulatory technical standards for methodologies and principles on the valuation of liabilities arising from derivatives (OJ L 228, 23.8.2016, pp. 7-15)</p><p>Commission Delegated regulation 2016/1400 of 10 May 2016 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to regulatory technical standards specifying the minimum elements of a business reorganisation plan and the minimum contents of the reports on the progress in the implementation of the plan (OJ L 228, 23.8.2016, pp. 1-6)</p><p>Commission Delegated regulation 2016/1075 of 23 March 2016 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to regulatory technical standards specifying the content of recovery plans, resolution plans and group resolution plans, the minimum criteria that the competent authority is to assess as regards recovery plans and group recovery plans, the conditions for group financial support, the requirements for independent valuers, the contractual recognition of write-down and conversion powers, the procedures and contents of notification requirements and of notice of suspension and the operational functioning of the resolution colleges (OJ L 184, 8.7.2016, pp. 1-71)</p><p>Commission Implementing regulation 2016/962 of 16 June 2016 laying down implementing technical standards with regard to the uniform formats, templates and definitions for the identification and transmission of information by competent authorities and resolution authorities to the European Banking Authority according to directive 2014/59/eu of the European Parliament and of the Council (OJ L 160, 17.6.2016, pp. 35-49)</p><p>Commission Implementing regulation 2016/911 of 9 June 2016 laying down implementing technical standards with regard to the form and the content of the description of group financial support agreements in accordance with directive 2014/59/eu of the European Parliament and of the Council establishing a framework for the recovery and resolution of credit institutions and investment firms (OJ L 153, 10.6.2016, pp. 25-27)</p><p>Commission Delegated regulation 2016/778 of 2 February 2016 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to the circumstances and conditions under which the payment of extraordinary ex post contributions may be partially or entirely deferred, and on the criteria for the determination of the activities, services and operations with regard to critical functions, and for the determination of the business lines and associated services with regard to core business lines (OJ L 131, 20.5.2016, pp. 41-47)</p><p>Commission Delegated regulation 2015/63 of 21 October 2014 supplementing directive 2014/59/eu of the European Parliament and of the Council with regard to ex ante contributions to resolution financing arrangements (OJ L 11, 17.1.2015, pp. 44-64)</p></div>
+<button id="nextBtn" onclick="nextParagraph()">Next</button>
+</div>
+<div id="nbPage">
+</div>
+<div class="controls">
+<button id="addButton" onclick="startSelection()">Add</button>
+<button id="cancelButton" onclick="cancelSelection()" style="display: none;">Cancel</button>
+<button id="downloadButton" onclick="downloadFile()">Download</button>
+<button id="nextDocumentBtn" onclick="goToNextDocument()" style="display: none;">Next Document</button>
+</div>
+<div class="current-selection" id="currentSelection" style="display: none;">
+<h2>Current Selection</h2>
+<ul id="currentSelectionList"></ul>
+</div>
+<div class="selected-phrases">
+<h2 id="selectedButton">Selected Triplets</h2>
+<ul id="selectedList"></ul>
+</div>
+</div>
+</body>
+</html>

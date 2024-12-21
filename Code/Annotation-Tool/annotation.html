@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>
+   Document Selector
+  </title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+  </script>
+  <script src="filesystem.js">
+  </script>
+  <link href="styles.css" rel="stylesheet"/>
+  <script>
+   // Check for downloaded documents in localStorage and update their styles
+    document.addEventListener('DOMContentLoaded', () => {
+        const documentLinks = document.querySelectorAll('#documentList li a');
+        
+        documentLinks.forEach(link => {
+            const docId = link.dataset.id;
+            if (localStorage.getItem(`downloaded_${docId}`)) {
+                link.classList.add('downloaded');
+                // Add a check emoji or an image next to the document name
+                const checkmark = document.createElement('span');
+                checkmark.textContent = ' ✅'; // You can replace this with an image if you prefer
+                link.appendChild(checkmark);
+            }
+            
+            link.addEventListener('click', () => {
+                localStorage.setItem(`visited_${docId}`, true);
+            });
+        });
+    });
+  </script>
+  <style>
+   .downloaded {
+            color: green;
+            font-weight: bold;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <h1>
+    Document Selector
+   </h1>
+   <p>
+    Hello 🌞, welcome to the annotation page 📝.
+    <ol>
+     <li>
+      All your annotations are listed below 📋. Each document corresponds to a document on the EUR-LEX platform, the European Union's legal platform.
+    if you want more context, you can find all the documents listed here with their unique identifier on the
+      <a href="https://european-union.europa.eu/">
+       EUROPA platform website
+      </a>
+      🌐
+     </li>
+     <li>
+      If you want to resume a previous annotation session 🕘, please select the folder containing your annotation files from the previous 
+    session (default is the download folder) via the “Select Folder to Resume Session” button
+    👉 Once the folder selected, the documents already annotated will be colored in green and you can continue where you stopped the last time 📑.
+    Please open this page with Edge or Google chrome browsers to benefit of this feature.
+     </li>
+     <li>
+      The IA 🤖 and the legal field ⚖ thank you for your valuable effort.
+     </li>
+     <li>
+      If you encounter any problems or incomprehensions during your annotation session, please contact us by email 📩 at :
+      <a href="mailto:nihed.bendahman@irit.fr?">
+       nihed.bendahman@irit.fr
+      </a>
+     </li>
+    </ol>
+    Happy annotation 🤗
+   </p>
+   <ul id="documentList">
+    <li>
+     <a data-id="doc_32014L0062" href="documents/doc_32014L0062.html">
+      Document 32014L0062
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0041" href="documents/doc_32014L0041.html">
+      Document 32014L0041
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0042" href="documents/doc_32014L0042.html">
+      Document 32014L0042
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0066" href="documents/doc_32014L0066.html">
+      Document 32014L0066
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0067" href="documents/doc_32014L0067.html">
+      Document 32014L0067
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0054" href="documents/doc_32014L0054.html">
+      Document 32014L0054
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0036" href="documents/doc_32014L0036.html">
+      Document 32014L0036
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014D0573" href="documents/doc_32014D0573.html">
+      Document 32014D0573
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014R0240" href="documents/doc_32014R0240.html">
+      Document 32014R0240
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014R0215" href="documents/doc_32014R0215.html">
+      Document 32014R0215
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014R0288" href="documents/doc_32014R0288.html">
+      Document 32014R0288
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0060" href="documents/doc_32014L0060.html">
+      Document 32014L0060
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014D0445" href="documents/doc_32014D0445.html">
+      Document 32014D0445
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014L0026" href="documents/doc_32014L0026.html">
+      Document 32014L0026
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014D0553" href="documents/doc_32014D0553.html">
+      Document 32014D0553
+     </a>
+    </li>
+    <li>
+     <a data-id="doc_32014D0556" href="documents/doc_32014D0556.html">
+      Document 32014D0556
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32008L0056" href="documents/sum_32008L0056.html">
+      Summary32008L0056
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32008L0048" href="documents/sum_32008L0048.html">
+      Summary32008L0048
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32008R0889" href="documents/sum_32008R0889.html">
+      Summary32008R0889
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32008D0721" href="documents/sum_32008D0721.html">
+      Summary32008D0721
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32008R0282" href="documents/sum_32008R0282.html">
+      Summary32008R0282
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32007E0468" href="documents/sum_32007E0468.html">
+      Summary32007E0468
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32006R1921" href="documents/sum_32006R1921.html">
+      Summary32006R1921
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32014R0747" href="documents/sum_32014R0747.html">
+      Summary32014R0747
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32013R0345" href="documents/sum_32013R0345.html">
+      Summary32013R0345
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32014L0059" href="documents/sum_32014L0059.html">
+      Summary32014L0059
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32014O0060" href="documents/sum_32014O0060.html">
+      Summary32014O0060
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32013L0053" href="documents/sum_32013L0053.html">
+      Summary32013L0053
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32013L0040" href="documents/sum_32013L0040.html">
+      Summary32013L0040
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32013L0029" href="documents/sum_32013L0029.html">
+      Summary32013L0029
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_32013R0543" href="documents/sum_32013R0543.html">
+      Summary32013R0543
+     </a>
+    </li>
+    <li>
+     <a data-id="sum_31998L0006" href="documents/sum_31998L0006.html">
+      Summary31998L0006
+     </a>
+    </li>
+   </ul>
+   <button id="selectFolderBtn">
+    Select Folder to Resume Session
+   </button>
+   <ul id="downloadedFilesList">
+   </ul>
+  </div>
+ </body>
+</html>

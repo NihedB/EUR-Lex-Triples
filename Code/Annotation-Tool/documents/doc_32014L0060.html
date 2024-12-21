@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../script.js"></script>
+<title>Entity Highlighter</title>
+<link href="../styles.css" rel="stylesheet"/>
+<!-- Include a font icon library (e.g., FontAwesome) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<input id="documentId" type="hidden" value="doc_32014L0060"/>
+<input id="nextDocumentUrl" type="hidden" value="doc_32014D0445.html"/>
+<input id="verbList" type="hidden" value="amending,repealing,implementing,amended,repealed,implemented"/>
+<input id="entitiesList" type="hidden" value="directive 93/7/eec,directive 95/46/ec,directive 2001/38/ec,directive 2014/60/eu,regulation 45/2001,decision 2008/49/ec,regulation 1024/2012,regulation 116/2009,directive 96/100/ec"/>
+<div id="triplet">
+<h2>
+        🔺 Annotate triplets ! But what is a triplet ?
+    </h2>
+<ul>
+<li>
+        A triplet is composed of 3 elements: <span style=" background-color: yellow">Entity 1</span>, <span style=" color: blue">Action</span>, <span style=" background-color: yellow">Entity 2</span>.
+        </li>
+<li>
+        The entities are legal references to laws, represented in the form of a <span style=" background-color: yellow">court decision</span>, a <span style=" background-color: yellow">directive</span>, a <span style=" background-color: yellow">regulation</span>, etc.
+        </li>
+<li>
+        Actions are represented as verbs: To <span style=" color: blue">ammend</span>, to <span style=" color: blue">repeal </span>, to <span style=" color: blue">implement</span>, etc.
+        </li>
+<li>
+            ❌ Please read the text carefully, our goal here is to form relational triplet. Sometimes there are all the elements of a triplet, but they do not form a relational triplet.
+        </li>
+<li>
+            📚 you can find some directives and examples in <a href="../examples.pdf" target="_blank">examples.pdf</a>. Also, if you encounter an unclear example, don't hesitate to use the “Go to the document translation” button to view the document's translation. if it's a summary, click on "Synthèse d'information" in the menu on the left of the translation page.
+        </li>
+</ul>
+</div>
+<div id="triplet">
+<h2>
+    🖍 Annotation Process    
+</h2>
+<ul>
+<li> 🖱 Click the Add button to start the annotation process.</li>
+<li> 🖱 Double-click or highlight the part of the text corresponding to an entity or an action. 
+Please select the 3 elements of the triplet in the following order: Entity 1 ➡ Action ➡ Entity 2.
+</li>
+<li> You can see the current selection items and cancel it at anytime. </li>
+<li> Once the 3 element of a selection are made, it will automatically be added to the Selected Triplets section. If a triplet needs to be removed it can be done there too. </li>
+<li> Once the annotation is finished, please click on the "Download" button to download the annotations or the "Next Document" button to download the annotations and move to next document.</li>
+</ul>
+</div>
+<div class="home-button-container">
+<a class="home-button" href="../annotation.html">
+<i class="fas fa-home"></i> Home
+    </a>
+<a class="href" href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32014L0060&amp;qid=1726477566260" id="doc_traduction"> 📖 Go to the document translation</a>
+</div>
+<h1>Entity Highlighter</h1>
+<div class="carousel" id="carousel">
+<button id="prevBtn" onclick="prevParagraph()">Previous</button>
+<div class="carousel-content" id="carouselContent"><p>directive 2014/60/eu OF THE EUROPEAN PARLIAMENT AND OF THE COUNCIL---of 15 May 2014---on the return of cultural objects unlawfully removed from the territory of a Member State and amending regulation 1024/2012 (Recast)</p><p>Council directive 93/7/eec (2) has been substantially amended by directive 96/100/ec (3) and 2001/38/EC (4) of the European Parliament and of the Council. Since further amendments are to be made, it should be recast in the interests of clarity.</p><p>directive 2014/60/eu of the European Parliament and the Council of 15 May 2014 on the return of cultural objects unlawfully removed from the territory of a Member State and amending regulation 1024/2012 (9): Articles 5 and 7.</p><p>(3)  directive 96/100/ec of the European Parliament and of the Council of 17 February 1997 amending the Annex to directive 93/7/eec on the return of cultural objects unlawfully removed from the territory of a Member State (OJ L 60, 1.3.1997, p. 59).</p><p>(4)  directive 2001/38/ec of the European Parliament and of the Council of 5 June 2001 amending Council directive 93/7/eec on the return of cultural objects unlawfully removed from the territory of a Member State (OJ L 187, 10.7.2001, p. 43).</p><p>(6)  regulation 1024/2012 of the European Parliament and of the Council of 25 October 2012 on administrative cooperation through the Internal Market Information System and repealing Commission decision 2008/49/ec (‘the IMI Regulation’) (OJ L 316, 14.11.2012, p. 1).</p></div>
+<button id="nextBtn" onclick="nextParagraph()">Next</button>
+</div>
+<div id="nbPage">
+</div>
+<div class="controls">
+<button id="addButton" onclick="startSelection()">Add</button>
+<button id="cancelButton" onclick="cancelSelection()" style="display: none;">Cancel</button>
+<button id="downloadButton" onclick="downloadFile()">Download</button>
+<button id="nextDocumentBtn" onclick="goToNextDocument()" style="display: none;">Next Document</button>
+</div>
+<div class="current-selection" id="currentSelection" style="display: none;">
+<h2>Current Selection</h2>
+<ul id="currentSelectionList"></ul>
+</div>
+<div class="selected-phrases">
+<h2 id="selectedButton">Selected Triplets</h2>
+<ul id="selectedList"></ul>
+</div>
+</div>
+</body>
+</html>

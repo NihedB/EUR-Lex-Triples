@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="../script.js"></script>
+<title>Entity Highlighter</title>
+<link href="../styles.css" rel="stylesheet"/>
+<!-- Include a font icon library (e.g., FontAwesome) -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container">
+<input id="documentId" type="hidden" value="sum_32013R0543"/>
+<input id="nextDocumentUrl" type="hidden" value="sum_31998L0006.html"/>
+<input id="verbList" type="hidden" value="amending,repealing"/>
+<input id="entitiesList" type="hidden" value="regulation 714/2009,regulation 1228/2003,directive 2008/114/ecestimation,directive 2008/114/ec,regulation 543/2013,regulation 1227/2011"/>
+<div id="triplet">
+<h2>
+        🔺 Annotate triplets ! But what is a triplet ?
+    </h2>
+<ul>
+<li>
+        A triplet is composed of 3 elements: <span style=" background-color: yellow">Entity 1</span>, <span style=" color: blue">Action</span>, <span style=" background-color: yellow">Entity 2</span>.
+        </li>
+<li>
+        The entities are legal references to laws, represented in the form of a <span style=" background-color: yellow">court decision</span>, a <span style=" background-color: yellow">directive</span>, a <span style=" background-color: yellow">regulation</span>, etc.
+        </li>
+<li>
+        Actions are represented as verbs: To <span style=" color: blue">ammend</span>, to <span style=" color: blue">repeal </span>, to <span style=" color: blue">implement</span>, etc.
+        </li>
+<li>
+            ❌ Please read the text carefully, our goal here is to form relational triplet. Sometimes there are all the elements of a triplet, but they do not form a relational triplet.
+        </li>
+<li>
+            📚 you can find some directives and examples in <a href="../examples.pdf" target="_blank">examples.pdf</a>. Also, if you encounter an unclear example, don't hesitate to use the “Go to the document translation” button to view the document's translation. if it's a summary, click on "Synthèse d'information" in the menu on the left of the translation page.
+        </li>
+</ul>
+</div>
+<div id="triplet">
+<h2>
+    🖍 Annotation Process    
+</h2>
+<ul>
+<li> 🖱 Click the Add button to start the annotation process.</li>
+<li> 🖱 Double-click or highlight the part of the text corresponding to an entity or an action. 
+Please select the 3 elements of the triplet in the following order: Entity 1 ➡ Action ➡ Entity 2.
+</li>
+<li> You can see the current selection items and cancel it at anytime. </li>
+<li> Once the 3 element of a selection are made, it will automatically be added to the Selected Triplets section. If a triplet needs to be removed it can be done there too. </li>
+<li> Once the annotation is finished, please click on the "Download" button to download the annotations or the "Next Document" button to download the annotations and move to next document.</li>
+</ul>
+</div>
+<div class="home-button-container">
+<a class="home-button" href="../annotation.html">
+<i class="fas fa-home"></i> Home
+    </a>
+<a class="href" href="https://eur-lex.europa.eu/legal-content/FR/TXT/?uri=CELEX%3A32013R0543&amp;qid=1726477566260" id="doc_traduction"> 📖 Go to the document translation</a>
+</div>
+<h1>Entity Highlighter</h1>
+<div class="carousel" id="carousel">
+<button id="prevBtn" onclick="prevParagraph()">Previous</button>
+<div class="carousel-content" id="carouselContent"><p>Commission regulation 543/2013 of 14 June 2013  on submission and publication of data in electricity markets and amending Annex I to regulation 714/2009 of the European Parliament and of the Council (OJ L 163, 15.6.2013, pp. 1-12)</p><p>regulation 714/2009 of the European Parliament and of the Council of 13 July 2009 on conditions for access to the network for cross-border exchanges in electricity and repealing regulation 1228/2003 (OJ L 211, 14.8.2009, pp. 15-35)</p></div>
+<button id="nextBtn" onclick="nextParagraph()">Next</button>
+</div>
+<div id="nbPage">
+</div>
+<div class="controls">
+<button id="addButton" onclick="startSelection()">Add</button>
+<button id="cancelButton" onclick="cancelSelection()" style="display: none;">Cancel</button>
+<button id="downloadButton" onclick="downloadFile()">Download</button>
+<button id="nextDocumentBtn" onclick="goToNextDocument()" style="display: none;">Next Document</button>
+</div>
+<div class="current-selection" id="currentSelection" style="display: none;">
+<h2>Current Selection</h2>
+<ul id="currentSelectionList"></ul>
+</div>
+<div class="selected-phrases">
+<h2 id="selectedButton">Selected Triplets</h2>
+<ul id="selectedList"></ul>
+</div>
+</div>
+</body>
+</html>
