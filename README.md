@@ -1,7 +1,7 @@
-# EUR-Lex-Triples
-EUR-Lex-Sum dataset annotated with triplets
+# EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation
+EUR-Lex-Sum dataset annotated with triples
 
-Dataset Description
+## Dataset Description
   - paper stats + histogrames + exemple
 - Description et utilisation du GIT
 
