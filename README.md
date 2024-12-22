@@ -20,9 +20,9 @@ Install all necessary dependencies by running :
 * [Code/Annotation-Tool](Code/Annotation-Tool) contains the code used for the annotation tool we developed as well as the detailed guidelines and some [examples](Code/Annotation-Tool/examples.pdf);
    
 ## Relation Extraction Baselines
-* [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines.
+* [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines : Fine-Tuning and Inference.
 * Results of baseline models for Relation Extraction are : ![baselines](baselines.jpg)
-
+* [Code/RE-Baselines](Code/RE-Baselines/Checlpoints) contains the checkpoints of the fine-tuned models.
 ## citation
 EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. Nihed Bendahman, Karen Pinel-Sauvagnat, Gilles Hubert and Mokhtar Boumedyen Billami.
 Paper submitted to ESWC 2025 Resources Track.
