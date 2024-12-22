@@ -8,6 +8,10 @@ EUR-Lex-Sum dataset [Aumiller, 2022](https://aclanthology.org/2022.emnlp-main.51
 * Here is an example of a document of EUR-Lex-Sum with its associated triples : ![Here is an example of EUR-Lex-Triples](EUR-Lex-Triples-Examples.jpg)
 
 * Number of occurrences of different entity and verb types across the dataset in documents (Docs) and summaries (Sums) : ![Here is an example of EUR-Lex-Triples](Entities-Verbs.jpg)
+  
+## Installation
+Install all necessary dependencies by running : 
+``` python3 -m pip install -r requirements.txt ```
 
 ## Data Preprocessing
 * [Code/Preprocessing](Code/Preprocessing) contains the code used for the pre-processing of documents for the annotation process.
