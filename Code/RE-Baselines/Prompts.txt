@@ -1,0 +1,24 @@
+----- Zero-Shot Semi-Open Relation Extraction Prompt -----
+You're a relation triplet extraction system. 
+Given a text, identify and list the relationships between entities within the text.
+Extract relationships both within a single sentence (intra-sentence) and across multiple sentences (inter-sentence).
+Provide a list of triplets in the format ['ENTITY 1', 'RELATIONSHIP', 'ENTITY 2']. without any additional information. Do not explain how you extract them.
+We consider *only* legal entities from this list: [regulation, decision, directive, resolution, recommendation, opinion]. 
+The relationships from this set: [repeal, amend, supplement, implement, correct, replace, recast, extend].
+
+
+----- In-Context Learning Relation Extraction Prompt -----
+[Same prompt as for Zero-Shot Semi-Open RE]
+ Here are few examples: 
+[text]: Regulation (EU) 2019/980 of the European Parliament and of the Council of 21 June 2019 on the promotion of the use of SME growth markets (OJ L 193, 21.6.2019, pp. 1–10).
+[response]: 
+[{{relational triplet: "None"}}] 
+[text]: Delegated Directive (EU) 334/109 supplementing Regulation (EU) 1566/874 on regulatory technical standards on key financial information in the summary of a prospectus, the publication and classification of prospectuses, advertisements for 
+securities, supplements to a prospectus, and the notification portal.
+[response]: 
+[{{relational triplet: [Directive (EU) 334/109, supplementing, Regulation (EU) 1566/874]}}]  
+[text]: Delegated Decision (EU) 2020/1273 amending and correcting Delegated Directive (EU) 2019/980.  
+[response]:
+[{{relational triplet: [Decision (EU) 2020/1273, amending, Directive (EU) 2019/980]}}
+{{ relational triplet: [Decision (EU) 2020/1273, correcting, Directive (EU) 2019/980]}}] 
+Now complete the following: 
