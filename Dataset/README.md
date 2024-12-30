@@ -9,7 +9,6 @@
   * `Summary Annotations` : containing a list of annotated paragraphs of the summary and their triples,
 ## Dataset Description
 * EUR-Lex-Triples consists on 1504 annotated documents. All Documents come from the english part of EUR-Lex-Sum Dataset.
-* [Dataset](Dataset) contains json files containing for each document its summary, the annotated paragraphs, and for each paragraph the triples derived from the annotations.
 
 * Here is an example of an annotated paragraph of EUR-Lex-Sum with its associated triples : ![Here is an example of EUR-Lex-Triples](../EUR-Lex-Triples-Examples.jpg)
 
