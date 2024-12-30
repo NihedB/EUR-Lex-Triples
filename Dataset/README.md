@@ -13,3 +13,5 @@
 * Here is an example of an annotated paragraph of EUR-Lex-Sum with its associated triples : ![Here is an example of EUR-Lex-Triples](../EUR-Lex-Triples-Examples.jpg)
 
 * Number of occurrences of different entity and verb types across the dataset in documents (Docs) and summaries (Sums) : ![Here is an example of EUR-Lex-Triples](../Entities-Verbs.jpg)
+
+* Some statistics of the annotated documents : ![Here is an example of EUR-Lex-Triples](../general_statistics.jpg)
