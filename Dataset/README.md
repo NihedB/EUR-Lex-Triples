@@ -15,4 +15,5 @@
 * Number of occurrences of different entity and verb types across the dataset in documents (Docs) and summaries (Sums) : ![Here is an example of EUR-Lex-Triples](../Entities-Verbs.jpg)
 
 * Some statistics of the annotated documents :
+
    ![Here is an example of EUR-Lex-Triples](../general_statistics.jpg)
