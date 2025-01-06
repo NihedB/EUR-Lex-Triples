@@ -11,10 +11,10 @@
 ## Dataset Description
 * EUR-Lex-Triples consists on 1504 annotated documents. All Documents come from the english part of EUR-Lex-Sum Dataset.
 
-* Here is an example of an annotated paragraph of EUR-Lex-Sum with its associated triples : ![Here is an example of EUR-Lex-Triples](../EUR-Lex-Triples-Examples.jpg)
+* Here is an example of an annotated paragraph of EUR-Lex-Sum with its associated triples : ![Here is an example of EUR-Lex-Triples](../Figures/EUR-Lex-Triples-Examples.jpg)
 
-* Number of occurrences of different entity and verb types across the dataset in documents (Docs) and summaries (Sums) : ![Here is an example of EUR-Lex-Triples](../Entities-Verbs.jpg)
+* Number of occurrences of different entity and verb types across the dataset in documents (Docs) and summaries (Sums) : ![Here is an example of EUR-Lex-Triples](../Figures/Entities-Verbs.jpg)
 
 * Some statistics of the annotated documents :
 
-   ![Here is an example of EUR-Lex-Triples](../general_statistics.jpg)
+   ![Here is an example of EUR-Lex-Triples](../Figures/general_statistics.jpg)
