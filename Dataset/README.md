@@ -1,3 +1,4 @@
+* The original EUR-Lex-Sum dataset can be found on the HuggingFace Hub : ![EUR-Lex-Sum](https://huggingface.co/datasets/dennlinger/eur-lex-sum)
 * This repository contains the annotated data.
 * Each json files contains :
 * * `Celex-id` : unique EUR-Lex identifier,
