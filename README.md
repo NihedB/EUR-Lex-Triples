@@ -19,14 +19,14 @@ Install all necessary dependencies by running :
 * [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines : Fine-Tuning and Inference.
 * Results of baseline models for Relation Extraction are : ![baselines](Figures/baselines.jpg)
 
-|  Model          |                 |  Precision      |  Recall         |  F1-Score       |
-|-----------------|-----------------|-----------------|-----------------|-----------------| 
-| Legal-Bert      |                 |                 |                 |                 |
-| Bert            |                 |     0.58        |       0.52      |      0.54       |
-| Rebel-Large     |                 |     0.88        |       0.75      |      0.80       | 
-| Mistral 7b      | zero-shot       |     0.38        |       0.30      |     0.33        |
-|                 | In-context      |     0.42        |       0.36      |     0.38        |
-|                 | Finetuning      |     0.84        |       0.69      |     0.75        |
+|  Model                  |  Precision      |  Recall         |  F1-Score       |
+|-----------------        |-----------------|-----------------|-----------------| 
+| Legal-Bert              |                 |                 |                 |
+| Bert                    |     0.58        |       0.52      |      0.54       |
+| Rebel-Large             |     0.88        |       0.75      |      0.80       | 
+| Mistral 7b zero-shot    |    0.38         |       0.30      |     0.33        |
+| Mistral 7b In-context   |    0.42         |       0.36      |     0.38        |
+| Mistral 7b Finetuning   |    0.84         |       0.69      |     0.75        |
 ## Citation
 EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. 
 Paper submitted to TPDL 2025.
