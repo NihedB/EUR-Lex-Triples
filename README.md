@@ -19,7 +19,7 @@ Install all necessary dependencies by running :
 * [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines : Fine-Tuning and Inference.
 * Results of baseline models for Relation Extraction are : ![baselines](Figures/baselines.jpg)
 ## Citation
-EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. Nihed Bendahman, Karen Pinel-Sauvagnat, Gilles Hubert and Mokhtar Boumedyen Billami.
-Paper submitted to ESWC 2025 Resources Track.
+EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. 
+Paper submitted to TPDL 2025.
 ## Licence
 Copyright for the editorial content of EUR-Lex website, the summaries of EU legislation and the consolidated texts owned by the EU, are licensed under the Creative Commons Attribution 4.0 International licence, i.e., CC BY 4.0 as mentioned on the official EUR-Lex website. Any data artifacts remain licensed under the CC BY 4.0 license.
