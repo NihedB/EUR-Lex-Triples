@@ -24,6 +24,7 @@ Install all necessary dependencies by running :
 | Legal-Bert      |                 |                 |                 |                 |
 | Bert            |                 |                 |                 |                 |
 | Rebel-Large     |                 |                 |                 |                 |
+|-----------------|-----------------|-----------------|-----------------|-----------------| 
 | Mistral 7b      | zero-shot       |                 |                 |                 |
 |                 | In-context      |                 |                 |                 |
 |                 | Finetuning      |                 |                 |                 |
