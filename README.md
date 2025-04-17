@@ -26,7 +26,7 @@ Install all necessary dependencies by running :
 | Mistral 7b      | zero-shot       |                 |                 |                 |
 |                 | In-context      |                 |                 |                 |
 |                 | Finetuning      |                 |                 |                 |
-
+|-----------------|-----------------|-----------------|-----------------|-----------------| 
 ## Citation
 EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. 
 Paper submitted to TPDL 2025.
