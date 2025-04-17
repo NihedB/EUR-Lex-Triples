@@ -17,9 +17,7 @@
 |**_amending_** Regulation 1296/2013, Regulation 1301/2013, Regulation 1303/2013, Regulation 1304/2013, Regulation 1309/2013, Regulation 1316/2013, Regulation 223/2014, Regulation 283/2014,    |
 |and **Decision 541/2014/eu**, and **_repealing_** Regulation 966/2012                                                                                                                           |
 |(OJ L 193, 30.7.2018, p. 1).                                                                                                                                                                    |
-|                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                                                                                                                |
 |**Relational Triples**:                                                                                                                                                                         |
 |- (Regulation 2018/1046, *amending*, Regulation 1296/2013)                                                                                                                                      |
 |- (Regulation 2018/1046, *amending*, Regulation 1301/2013)                                                                                                                                      |
