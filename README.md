@@ -10,7 +10,7 @@ Install all necessary dependencies by running :
 ``` python3 -m pip install -r requirements.txt ```
 
 ## Data Preprocessing
-* [Code/Preprocessing](Code/Preprocessing) contains the code used for the pre-processing of documents for the annotation process.
+* [Code/Preprocessing](https://github.com/NihedB/EUR-Lex-Triples/tree/main/Code/Preprocessing) contains the code used for the pre-processing of documents for the annotation process.
   
 ## Annotation Tool
 * [Code/Annotation-Tool](Code/Annotation-Tool) contains the code used for the annotation tool we developed as well as the detailed guidelines and some [examples](Code/Annotation-Tool/examples.pdf);
