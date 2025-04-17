@@ -20,7 +20,6 @@ Install all necessary dependencies by running :
 * Results of baseline models for Relation Extraction are : ![baselines](Figures/baselines.jpg)
 
 |  Model          |                 |  Precision      |  Recall         |  F1-Score       |
-|-----------------|-----------------|-----------------|-----------------|-----------------| 
 | Legal-Bert      |                 |                 |                 |                 |
 | Bert            |                 |                 |                 |                 |
 | Rebel-Large     |                 |                 |                 |                 |
