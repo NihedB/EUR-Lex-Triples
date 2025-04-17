@@ -18,6 +18,13 @@ Install all necessary dependencies by running :
 ## Relation Extraction Baselines
 * [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines : Fine-Tuning and Inference.
 * Results of baseline models for Relation Extraction are : ![baselines](Figures/baselines.jpg)
+
+| Colonne 1       | Colonne 2       | Colonne 3       |
+|-----------------|-----------------|-----------------|
+| Valeur 1.1      | Valeur 1.2      | Valeur 1.3      |
+| Valeur 2.1      | Valeur 2.2      | Valeur 2.3      |
+| Valeur 3.1      | Valeur 3.2      | Valeur 3.3      |
+
 ## Citation
 EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. 
 Paper submitted to TPDL 2025.
