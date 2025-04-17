@@ -20,7 +20,7 @@ Install all necessary dependencies by running :
 * Results of baseline models for Relation Extraction are : ![baselines](Figures/baselines.jpg)
 
 | Colonne 1       | Colonne 2       | Colonne 3       |
-|-----------------|-----------------|-----------------|
+ ----------------- ----------------- ----------------- 
 | Valeur 1.1      | Valeur 1.2      | Valeur 1.3      |
 | Valeur 2.1      | Valeur 2.2      | Valeur 2.3      |
 | Valeur 3.1      | Valeur 3.2      | Valeur 3.3      |
