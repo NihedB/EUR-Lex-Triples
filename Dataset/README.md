@@ -14,8 +14,9 @@
 * Here is an example of an annotated paragraph of EUR-Lex-Sum with its associated triples : ![Here is an example of EUR-Lex-Triples](../Figures/EUR-Lex-Triples-Examples.jpg)
 
 * Number of occurrences of different entity and verb types across the dataset in documents (Docs) and summaries (Sums) :
-  |                      |                  | Original Dataset     | Selected Paragraphs   | Annotated Triples     |
-|----------------------|------------------|----------------------|------------------------|------------------------|
+  
+|                      |                  | Original Dataset     | Selected Paragraphs   | Annotated Triples      |
+|----------------------|------------------|----------------------|------------------------|-----------------------|
 |                      |                  | Docs     | Sums       | Docs     | Sums       | Docs     | Sums       |
 | **Entity**           | Directive        | 37,563   | 5,841      | 11,898   | 2,448      | 6,720    | 2,501      |
 |                      | Decision         | 23,940   | 4,469      | 3,786    | 885        | 1,329    | 854        |
