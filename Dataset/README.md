@@ -36,4 +36,10 @@
 
 * Some statistics of the annotated documents :
 
-   ![Here is an example of EUR-Lex-Triples](../Figures/general_statistics.jpg)
+| Element                     | Number |
+|-----------------------------|---------|
+| Annotated paragraphs        | 7,186   |
+| No_relation tag paragraphs  | 972     |
+| Triples                     | 14,396  |
+| Unique triples              | 9,193   |
+
