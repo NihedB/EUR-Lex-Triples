@@ -22,11 +22,11 @@ Install all necessary dependencies by running :
 |  Model          |                 |  Precision      |  Recall         |  F1-Score       |
 |-----------------|-----------------|-----------------|-----------------|-----------------| 
 | Legal-Bert      |                 |                 |                 |                 |
-| Bert            |                 |                 |                 |                 |
-| Rebel-Large     |                 |                 |                 |                 | 
-| Mistral 7b      | zero-shot       |                 |                 |                 |
-|                 | In-context      |                 |                 |                 |
-|                 | Finetuning      |                 |                 |                 |
+| Bert            |                 |     0.58        |       0.52      |      0.54       |
+| Rebel-Large     |                 |     0.88        |       0.75      |      0.80       | 
+| Mistral 7b      | zero-shot       |     0.38        |       0.30      |     0.33        |
+|                 | In-context      |     0.42        |       0.36      |     0.38        |
+|                 | Finetuning      |     0.84        |       0.69      |     0.75        |
 ## Citation
 EUR-Lex-Triples: A Legal Relation Extraction Dataset from European Legislation. 
 Paper submitted to TPDL 2025.
