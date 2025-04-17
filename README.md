@@ -17,7 +17,7 @@ Install all necessary dependencies by running :
    
 ## Relation Extraction Baselines
 * [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines : Fine-Tuning and Inference.
-* Results of baseline models for Relation Extraction are : ![baselines](Figures/baselines.jpg)
+* Results of baseline models for Relation Extraction are : 
 
 |  Model                  |  Precision      |  Recall         |  F1-Score       |
 |-----------------        |-----------------|-----------------|-----------------| 
