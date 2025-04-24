@@ -1,13 +1,15 @@
-* The original EUR-Lex-Sum dataset can be found on the HuggingFace Hub : [EUR-Lex-Sum](https://huggingface.co/datasets/dennlinger/eur-lex-sum)
 * This repository contains the annotated data.
-* Each json files contains :
+* The original EUR-Lex-Sum dataset can be found on the HuggingFace Hub : [EUR-Lex-Sum](https://huggingface.co/datasets/dennlinger/eur-lex-sum)
+* ```Annotated_Documents``` repository contains all documents of EUR-Lex-Sum, whether annotated or not.
+* ```Filtred_Annotated_Documents``` repository contains only the annotated documents (a document is annotated if it contains at least one annotated paragraph. A paragraph is annotated if it contains the necessary elements for, at least, one triple, i.e, 2 entities and 1 verb).
+* Each json files includes the following metadata :
 * * `Celex-id` : unique EUR-Lex identifier,
   * `Reference`,
   * `Summary`,
   * `Tags` : Keywords document,
-  * `Subjects` : Document's Topic
+  * `Subjects` : Document's Topic,
   * `Reference Annotations` : containing a list of annotated paragraphs of the documents and their triples,
-  * `Summary Annotations` : containing a list of annotated paragraphs of the summary and their triples,
+  * `Summary Annotations` : containing a list of annotated paragraphs of the summary and their triples.
 ## Dataset Description
 * EUR-Lex-Triples consists on 1504 annotated documents. All Documents come from the english part of EUR-Lex-Sum Dataset.
 
