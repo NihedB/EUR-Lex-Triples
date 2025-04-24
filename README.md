@@ -3,20 +3,20 @@ EUR-Lex-Sum dataset [Aumiller, 2022](https://aclanthology.org/2022.emnlp-main.51
 
 ## Dataset Description
 * EUR-Lex-Triples consists on 1504 annotated documents. All Documents come from the english part of EUR-Lex-Sum Dataset.
-* [Dataset](https://github.com/NihedB/EUR-Lex-Triples/tree/main/Dataset) contains json files containing for each document its summary, the annotated paragraphs, and for each paragraph the triples derived from the annotations.
+* ```Dataset``` contains json files containing for each document its summary, the annotated paragraphs, and for each paragraph the triples derived from the annotations.
   
 ## Installation
 Install all necessary dependencies by running : 
 ``` python3 -m pip install -r requirements.txt ```
 
 ## Data Preprocessing
-* [Code/Preprocessing](https://github.com/NihedB/EUR-Lex-Triples/tree/main/Code/Preprocessing) contains the code used for the pre-processing of documents for the annotation process.
+* ```Code/Preprocessing``` contains the code used for the pre-processing of documents for the annotation process.
   
 ## Annotation Tool
-* [Code/Annotation-Tool](Code/Annotation-Tool) contains the code used for the annotation tool we developed as well as the detailed guidelines and some [examples](Code/Annotation-Tool/examples.pdf);
+* ```Code/Annotation-Tool``` contains the code used for the annotation tool we developed as well as the detailed guidelines and some [examples](Code/Annotation-Tool/examples.pdf);
    
 ## Relation Extraction Baselines
-* [Code/RE-Baselines](Code/RE-Baselines) contains the code used to run the RE baselines : Fine-Tuning and Inference.
+* ```Code/RE-Baselines``` contains the code used to run the RE baselines : Fine-Tuning and Inference.
 * Results of baseline models for Relation Extraction are : 
 
 |  Model                  |  Precision      |  Recall         |  F1-Score       |
