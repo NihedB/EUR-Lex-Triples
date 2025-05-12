@@ -21,7 +21,7 @@ Install all necessary dependencies by running :
 
 |  Model                  |  Precision      |  Recall         |  F1-Score       |
 |-----------------        |-----------------|-----------------|-----------------| 
-| Legal-Bert              |                 |                 |                 |
+| Legal-Bert              |     0.64        |       0.59      |      0.60       |
 | Bert                    |     0.58        |       0.52      |      0.54       |
 | Rebel-Large             |     0.88        |       0.75      |      0.80       | 
 | Mistral 7b zero-Shot    |    0.38         |       0.30      |     0.33        |
